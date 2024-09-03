@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recommended Products Page</title>
+	<link rel="stylesheet" href="RECOMMENDED2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: transparent;
+}
+
+
+
+header {
+  background-color: #3c4a5a;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+	color: #f5efef;
+	font-size: 28px;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #faf5f5;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav a:hover {
+	color: #d9e4f1;
+}
+
+.container {
+	margin: 20px;
+	padding: 40px;
+	background-color: #fff;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+
+h2 {
+	margin-bottom: 20px;
+	color: #3c4a5a;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .product-icon {
+    margin-right: 20px;
+  }
+
+  .product-icon i {
+    font-size: 30px;
+    color: #3c4a5a;
+  }
+  .product-icon span {
+    font-size: 30px;
+    color: #3c4a5a;
+  }
+
+  .product-details {
+    flex: 1;
+  }
+
+  .product-details h3 {
+    margin: 6;
+    font-size: 25px;
+    color: #3c4a5a;
+  }
+
+  .product-details p {
+    font-size: 19px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    background-color: #3b4d61;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+      bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.icons a {
+	margin-right: 10px;
+}
+
+.icons i {
+	font-size: 50px;
+	color: #fff;
+}
+
+.icons p {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+  position: absolute;
+}
+
+
+
+
+
+  .wrapper div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 4s linear infinite;
+    transform-origin: right;
+  }
+
+
+  div .dot {
+    height: 20px;
+    width: 60px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+  .wrapper div:nth-child(1) {
+    top: 70%;
+    left: 1%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(3) {
+    top: 40%;
+    left: 15%;
+    animation: animate 3s linear infinite;
+  }
+  .wrapper div:nth-child(4) {
+    top: 66%;
+    left: 90%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(5) {
+    top: 90%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(6) {
+    top: 30%;
+    left: 90%;
+    animation: animate 5s linear infinite;
+  }
+  .wrapper div:nth-child(7) {
+    top: 70%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(8) {
+    top: 75%;
+    left: 90%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(9) {
+    top: 50%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(10) {
+    top: 45%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(11) {
+    top: 10%;
+    left: 15%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(12) {
+    top: 20%;
+    left: 85%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(13) {
+    top: 20%;
+    left: 1%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(14) {
+    top: 60%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(15) {
+    top: 20%;
+    left: 100%;
+    animation: animate 9s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+    </style>
+</head>
+<body>
+
+
+
+        <div class="wrapper">
+
+
+
+          <div><span class="fas fa-heart"></span></div>
+          <div><span class="fas fa-star"></span></div>
+          <div><span class="fas fa-gift"></span></div>
+          <div><span class="fas fa-shopping-bag"></span></div>
+          <div><span class="fas fa-mug-hot"></span></div>
+          <div><span class="fas fa-couch"></span></div>
+          <div><span class="fas fa-headphones"></span></div>
+          <div><span class="fas fa-camera"></span></div>
+          <div><span class="fas fa-tshirt"></span></div>
+          <div><span class="fas fa-briefcase"></span></div>
+          <div><span class="fas fa-book"></span></div>
+          <div><span class="fas fa-bicycle"></span></div>
+          <div><span class="fas fa-car"></span></div>
+          <div><span class="fas fa-shoe-prints"></span></div>
+      </div>
+
+
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<a href="#">Recommended Products Page</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		<h2>Products you may like</h2>
+		<div class="product">
+            <div class="product-icon">
+              <i class="fas fa-heart"></i>
+              <span class="glyphicon">&#xe116;</span>
+            </div>
+            <div class="product-details">
+              <h3>{{ a }}</h3>
+
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-icon">
+              <i class="fas fa-heart"></i>
+              <span class="glyphicon">&#xe116;</span>
+            </div>
+            <div class="product-details">
+              <h3>{{ b }}</h3>
+
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-icon">
+              <i class="fas fa-heart"></i>
+              <span class="glyphicon">&#xe116;</span>
+            </div>
+            <div class="product-details">
+              <h3>{{ c }}</h3>
+
+            </div>
+          </div>
+
+		<div class="product">
+            <div class="product-icon">
+              <i class="fas fa-heart"></i>
+              <span class="glyphicon">&#xe116;</span>
+            </div>
+            <div class="product-details">
+              <h3>{{ d }}</h3>
+
+            </div>
+          </div>
+	</div>
+	<footer>
+		<div class="footer-content">
+			<div class="icons">
+				<a href="#"><i class="fas fa-user-alt"></i></a>
+				<p>Dawood Tanvir</p>
+			</div>
+			<div class="icons">
+				<a href="#"><i class="fas fa-user-alt"></i></a>
+				<p>Ume Hani</p>
+			</div>
+			<div class="icons">
+				<a href="#"><i class="fas fa-user-alt"></i></a>
+				<p>Laiba Batool</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
